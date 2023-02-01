@@ -1,0 +1,912 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = ToolWindow
+  Caption = 'DragOver'
+  ClientHeight = 480
+  ClientWidth = 334
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    HitTest = True
+    Size.Width = 334.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object GridLayout1: TGridLayout
+      Align = Client
+      ItemHeight = 80.000000000000000000
+      ItemWidth = 80.000000000000000000
+      Orientation = Horizontal
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 324.000000000000000000
+      Size.Height = 420.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Button1: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 19
+        Text = '2'
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation2: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation1: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button2: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 82.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 18
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation3: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation2: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button3: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 162.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 17
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation4: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation3: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button4: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 242.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 16
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation5: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation4: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button5: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 82.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation6: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation5: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button6: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 82.000000000000000000
+        Position.Y = 82.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 14
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation7: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation6: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button7: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 162.000000000000000000
+        Position.Y = 82.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 13
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation8: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation7: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button8: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 242.000000000000000000
+        Position.Y = 82.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation9: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation8: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button9: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 162.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation10: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation9: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button10: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 82.000000000000000000
+        Position.Y = 162.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        Text = '2'
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation11: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation10: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button11: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 162.000000000000000000
+        Position.Y = 162.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation12: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation11: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button12: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 242.000000000000000000
+        Position.Y = 162.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation13: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation12: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button13: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 242.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation14: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation13: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button14: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 82.000000000000000000
+        Position.Y = 242.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation15: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation14: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button15: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 162.000000000000000000
+        Position.Y = 242.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation16: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation15: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button16: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 242.000000000000000000
+        Position.Y = 242.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation17: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation16: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button17: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 322.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation18: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation17: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button18: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 82.000000000000000000
+        Position.Y = 322.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation19: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation18: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button19: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 162.000000000000000000
+        Position.Y = 322.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation20: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation19: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+      object Button20: TButton
+        DragMode = dmAutomatic
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 242.000000000000000000
+        Position.Y = 322.000000000000000000
+        Size.Width = 76.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TextSettings.Font.Size = 25.000000000000000000
+        OnDragOver = Button1DragOver
+        OnDragDrop = Button1DragDrop
+        object FloatAnimation21: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Font.Size'
+          StartValue = 0.000000000000000000
+          StopValue = 25.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+        object RectAnimation20: TRectAnimation
+          Duration = 0.200000002980232200
+          OnFinish = RectAnimation1Finish
+          PropertyName = 'Margins'
+          StartValue.Left = 35.000000000000000000
+          StartValue.Top = 35.000000000000000000
+          StartValue.Right = 35.000000000000000000
+          StartValue.Bottom = 35.000000000000000000
+          StopValue.Left = -10.000000000000000000
+          StopValue.Top = -10.000000000000000000
+          StopValue.Right = -10.000000000000000000
+          StopValue.Bottom = -10.000000000000000000
+          Trigger = 'IsOk=True'
+        end
+      end
+    end
+    object Layout2: TLayout
+      Align = Top
+      Size.Width = 334.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Layout3: TLayout
+        Align = Right
+        Position.X = 152.000000000000000000
+        Size.Width = 182.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Top
+          Size.Width = 182.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'High Score'
+          TabOrder = 0
+        end
+        object LabelBestScore: TLabel
+          Align = Client
+          Size.Width = 182.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '0'
+          TabOrder = 1
+        end
+      end
+      object Layout4: TLayout
+        Align = Client
+        Size.Width = 152.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label2: TLabel
+          Align = Top
+          Size.Width = 152.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Score'
+          TabOrder = 0
+        end
+        object LabelScore: TLabel
+          Align = Client
+          Size.Width = 152.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = '0'
+          TabOrder = 1
+          object Text1: TText
+            Align = Client
+            Size.Width = 152.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            object FloatAnimationPing: TFloatAnimation
+              AnimationType = InOut
+              Duration = 0.500000000000000000
+              PropertyName = 'Position.Y'
+              StartValue = 0.000000000000000000
+              StopValue = -60.000000000000000000
+            end
+            object FloatAnimationOpa: TFloatAnimation
+              Duration = 0.500000000000000000
+              PropertyName = 'Opacity'
+              StartValue = 1.000000000000000000
+              StopValue = 0.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  object Rectangle1: TRectangle
+    Align = Client
+    Opacity = 0.899999976158142100
+    Size.Width = 334.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object Label3: TLabel
+      Align = Center
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Game Over!'
+      TabOrder = 0
+      object ButtonTrayAgain: TButton
+        Position.X = 16.000000000000000000
+        Position.Y = 56.000000000000000000
+        TabOrder = 4
+        Text = 'Tray Again'
+        OnClick = ButtonTrayAgainClick
+      end
+      object FloatAnimationGameOver: TFloatAnimation
+        Duration = 2.000000000000000000
+        PropertyName = 'Position.Y'
+        StartValue = 500.000000000000000000
+        StopValue = 100.000000000000000000
+      end
+    end
+  end
+  object FloatAnimationRun: TFloatAnimation
+    Duration = 1.000000000000000000
+    OnFinish = FloatAnimationRunFinish
+    PropertyName = 'Tag'
+    StartValue = 0.000000000000000000
+    StopValue = 1.000000000000000000
+  end
+end
